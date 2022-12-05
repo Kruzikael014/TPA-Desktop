@@ -1,0 +1,236 @@
+==========
+Actor
+==========
+Employees (Superclass)
+
+1  Manager
+2  HRD
+3  Accounting and Finance Department
+4  Storage Department
+5  External Department 
+6  Promotion and Event Department
+7  Movie Department
+	Schedule D 
+	Front office D 
+	Operation D 
+8  Cafe Department
+	Front Office D 
+	Kitchen D 
+9  Customer
+
+==========
+Action
+==========
+1  Manager menggunakan system untuk melihat pendapatan V
+2  Manager menggunakan system untuk melihat pengeluaran V
+
+3  Manager menggunakan system untuk melihat data film V
+
+4  Manager menggunakan system untuk melihat fasilitas/peralatan V
+
+5  Manager menggunakan system untuk melihat membership V
+
+6  Manager menggunakan system untuk melihat data pegawai V
+
+7. Manager menggunakan system untuk menggapprove request pengunduran diri
+7. Manager menggunakan system untuk melihat request pengunduran diri
+
+7  HRD     menggunakan system untuk melihat data pegawai V
+
+8  HRD     menggunakan system untuk melihat data rekruitment V
+9  HRD     menggunakan system untuk memasukkan data rekruitment V
+10  HRD    menggunakan system untuk mendelete data rekruitment V
+11  HRD    menggunakan system untuk mengupdate data rekruitment V
+
+12  HRD & manager   menggunakan system untuk update gaji karyawan 			???????
+13. HRD & Manager menggunakan system untuk approve gaji karyawan V
+13  HRD    menggunakan system untuk melihat request penaikan gaji karyawan V
+
+13.5. HRD menggunakan system untuk memasukkan data karyawan V
+13.5. HRD menggunakan system untuk mengupdate data karyawan V
+13.5. HRD menggunakan system untuk melihat data karyawan V
+13.5. HRD menggunakan system untuk mendelete V
+
+14  HRD    menggunakan system untuk mengupdate jam kerja karyawan  V
+16  HRD    menggunakan system untuk melihat jam kerja karyawan V
+
+17  HRD    menggunakan system untuk melihat kehadiran karyawan V
+
+18  HRD    menggunakan system untuk melihat request izin/personal leave  V
+
+21. Accoun & manager menggunakan system untuk melihat fund requests V
+22. Accoun menggunakan system untuk mengupdate fund requests V
+23. Accoun & manager menggunakan system untuk mengapprove fund requests V
+
+21. Accoun menggunakan system untuk melihat tagihan pajak V
+22. Accoun menggunakan system untuk mengupdate tagihan pajak V
+23. Accoun menggunakan system untuk mendelete tagihan pajak V
+24. Accoun menggunakan system untuk memasukkan tagihan pajak V
+
+21. Accoun menggunakan system untuk melihat pemasukkan V
+22. Accoun menggunakan system untuk mengupdate  pemasukkan V
+23. Accoun menggunakan system untuk mendelete pemasukkan V
+24. Accoun menggunakan system untuk memasukkan  pemasukkan V
+
+21. Accoun menggunakan system untuk melihat pengeluaran V
+22. Accoun menggunakan system untuk mengupdate  pengeluaran V
+23. Accoun menggunakan system untuk mendelete pengeluaran V
+24. Accoun menggunakan system untuk memasukkan  pengeluaran V
+
+21  Storag menggunakan system untuk melihat fasilitas/peralatan V
+22  Storag menggunakan system untuk melihat request pembelian (bs aja ada request pembelian eq/inv dari department lain) V
+
+25  Storag menggunakan system untuk melihat stock makanan  V
+26  Storag menggunakan system untuk mengudpate stock makanan  V
+27  Storag menggunakan system untuk menghapus stock makanan  V
+28  Storag menggunakan system untuk memasukkan stock makanan  V
+
+28,5  ExDept menggunakan system untuk melihat informasi client  V
+29  ExDept menggunakan system untuk memasukkan informasi client  V
+30  ExDept menggunakan system untuk mengupdate informasi client  V
+31  ExDept menggunakan system untuk menghapus informasi client  V
+
+32  ExDept menggunakan system untuk membroadcast informasi client  V
+
+33  ExDept menggunakan system untuk melihat data penjualan film  V
+
+34  ExDept menggunakan system untuk memasukkan data film  V
+35  ExDept menggunakan system untuk mengdelete data film  V
+36  ExDept menggunakan system untuk melihat data film  V
+37  ExDept menggunakan system untuk mengupdate data film  V
+(kalo ada penjualan ticket dicattat transaksinya dalam db, otomatis mungkiin utk bikin 
+sebuah function generateReport() dimana nanti kita bisa buat detailed Report yang akan 
+dikirim ke external dengan tinggal klik tombol itu, tp krn blm keliatan ada hal semacam 
+itu, kita asumsikan saja kita bisa buat report secara manual diluar system, karena kita 
+bisa liat data film)
+
+37  ExDept menggunakan system untuk melihat stock makanan  V
+
+38  ExDept menggunakan system untuk melihat biaya pengiklanan	V
+39  ExDept menggunakan system untuk mencatat detail pengiklanan  V
+40  ExDept menggunakan system untuk mengupdate detail pengiklanan V 
+41  ExDept menggunakan system untuk mendelete detail pengiklanan  V
+42  ExDept menggunakan system untuk melihat detail pengiklanan  V
+
+43  Promot menggunakan system untuk melihat membership  V
+44  Promot menggunakan system untuk membuat vocher  v
+45  Promot menggunakan system untuk mengannounce promo  v
+
+Movie Department
+
+46  Schediv menggunakan system untuk melihat data film  V
+47  Schediv menggunakan system untuk mengupdate data film  V
+
+48  MDFront menggunakan system untuk memasukkan data penjualan film  V
+49  MDFront menggunakan system untuk mengupdate data penjualan film  V
+50  MDFront menggunakan system untuk mendelete data penjualan film  V
+
+51  MDFront menggunakan system untuk melihat membership  V
+52  MDFront menggunakan system untuk memasukkan membership  V
+53  MDFront menggunakan system untuk mengupdate membership V
+54. MDFront menggunakan system untuk mendelete membership V
+
+54  OpDIVMD menggunakan system untuk melihat data film  (kapan selesai dan kapan harus mulai bersih bersih) V
+55  OpDIVMD menggunakan system untuk melihat detail pengiklanan  V
+
+Cafe Department
+
+55. CDFront menggunakan system untuk melihat order V
+56  CDFront menggunakan system untuk memasukkan order V
+57  CDFront menggunakan system untuk mengupdate order V
+58  CDFront menggunakan system untuk mendelete order V
+
+59  KitchDiv menggunakan system untuk melihat order V
+60  KitchDiv menggunakan system untuk mengupdate order V
+
+61  Customer menggunakan system untuk melihat order V
+ 
+Global 
+every department menggunakan system untuk melapor kerusakan barang V
+every department menggunakan system untuk request uang perusahaan (ada tipe, pembelian fasilitas, atau operational) V
+employees menggunakan system untuk ganti work shift  V
+employees menggunakan system untuk submit personal leave (izin) V
+
+
+
+
+
+
+
+
+
+
+
+
+==========
+function
+==========
+1  Ada fitur filter di function-function view (filter based on important attributes) ggacuman applied ke fitur view yANG MAU DILIAT manager doang
+2  RecordFacilityUser
+
+
+
+
+
+
+
+subsytems -> inventory
+	    -> cafe
+	    -> movie
+	    -> economy/finance
+	    -> HR 
+
+
+
+
+
+==========
+top 10 unique function 
+==========
+1. Create voucher
+2. Announce client messages
+3. Accounce promo
+4. Propose fund request
+5. Propose personal leave
+6. Propose worktime change request
+7. Report for broken facility
+8. View work announcement
+9. Delete membership
+10. Update worktime request
+
+
+
+
+
+Use case name: 	Nama dari use case tersebut
+Scenario: 	Scenario yang digambarkan, itu lagi mau ngapain
+Triggering event: 	Apa yang menyebabkan ini terjadi, butuh apa sampe ini harus dilakukan
+Brief description: 	Secara singkat jelasin, habis gini gini ngapain, (step brief gitu)
+Actors: 	Aktor utama yang melakukan aktivitas ini basically usecasenya dibuat untuk dia
+Related use cases: 	Use case yang invoke use case ini sampe dia terjadi, biasanya ini include sihm, jadi kalau dia gak include  siapa siapa kita isi none
+Stakeholders: 	Orang yang terlibat tapi gak melakukan use casenya secara langsung 
+Preconditions: 	Syarat yang harus ada kalau pengen ngelakuin use case tsb, harus punya akun dulu, akun gaboleh expired, harissa ada saldo 5 m, dst, bebas 
+Postconditions: 	ini bisa dibilang output gitu sih, kek kondisi setlelah use case dijalanin kan pasti dapet sesuatu, kita kek jelasin kondisinya kita dapet apa aja
+Flow of activities:	Actor	System
+	1.	Actor melakukan apa yagn general atau mau m,elakukan apa e.g. actor indicates desire to [uuse case]
+2.	Customer do something physically, e.g. enters one or more address
+3.	Customer enter credit or debit card info	1.1.	System creates a new customer 
+1.2.	System prompt for customer addressees
+
+2.1. System creates addresses 
+2.2. System prompts for credit/debit card.
+
+3.1.	System creates account
+3.2.	System verifies authorization for credit/debit card
+3.3.	System associates customer address and account 
+3.4.	System returns valid customer account det ails
+Exception conditions: 	Refer nomor di system, contoh 1.1 atau 2.1 atau 3.2 nah lau kasih tau dia error kalo kondisi kek gimana 
+Contoh 
+System gabisa create new user (1.1) kalo misalnyua basic customer data are incomplete Berarti
+1.1.	Kalo data pribadi gak komplit
+2.1. Kalau address gak valid/gk terdaftar di gmaps *contohnya
+
+
+
+
+
