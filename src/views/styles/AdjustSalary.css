@@ -1,0 +1,41 @@
+ #form-as {
+    width: 80%;
+    height: 70vh;
+    padding-top: 7rem;
+}
+
+#name-form-as, #reason-form-as {
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#adjust-button {
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+    left: 55%;
+    top: 10%;
+}
+
+#adjust-button:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+#num {
+    width: 50rem;
+    height: 3rem;
+}
+
+#reason {
+    width: 50rem;
+    height: 7rem;
+}

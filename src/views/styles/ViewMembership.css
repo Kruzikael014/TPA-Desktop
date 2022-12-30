@@ -1,0 +1,53 @@
+#vmem-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+
+#vmem-card {
+    position: relative;
+    height: 22rem;
+    width: 100%;
+    background-color: orange;
+    border-radius: 30px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.vmem-id {
+    position: relative;
+    left: 9.7rem;
+}
+
+.qr {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+}
+
+.vm-hori-compartment {
+    margin-top: 1.2rem;
+    right: 0px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 70%;
+    justify-content: space-around;
+}
+
+.vm-verti-compartment1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.vm-typeof {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

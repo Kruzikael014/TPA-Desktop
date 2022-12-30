@@ -1,0 +1,91 @@
+#title-container-vsa {
+    position: relative;
+    left: calc(100vh * 0.8);
+    margin-bottom: 3rem;
+}
+
+#unconfirmed-vsa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0.8rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.salary-request-card-vsa {
+    padding: 2rem;
+    height: 30rem;
+    width: 100%;
+    background-color: rgb(247, 171, 85);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    row-gap: 1.6rem;
+}
+
+.request-vsa-id {
+    margin-bottom: 0.99rem;
+}
+
+.request-vsa-status {
+    display: flex;
+    column-gap: 6rem;
+
+}
+
+.man-status-approval, .fin-status-approval {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 15px;
+}
+
+.request-reason-vsa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-vsa {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    user-select: none;
+}
+
+.accept-button-vsa, .reject-button-vsa {
+    width: 12rem;
+    height: 4.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accept-button-vsa {
+    background-color: rgb(14, 85, 14);
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.reject-button-vsa {
+    border: 0.2px rgba(0, 0, 0, 0.395) double;
+    border-radius: 10px;
+    background-color: rgb(232, 76, 55);
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.reject-button-vsa:hover {
+    transition: 600ms;
+    background-color: rgb(255, 0, 0);
+} 
+
+
+.accept-button-vsa:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}

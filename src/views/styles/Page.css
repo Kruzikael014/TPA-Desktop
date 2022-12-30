@@ -1,0 +1,16 @@
+#inner-page {
+    position: absolute;
+    margin-top: calc(2rem);
+    margin-left: 24%;
+    padding-bottom: 50px;
+    width: 74%;
+    height: 85vh;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    overflow-y: visible;
+    padding: 60px;
+}
+
+::-webkit-scrollbar {
+    display: block;
+}

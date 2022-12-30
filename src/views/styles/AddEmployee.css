@@ -1,0 +1,134 @@
+#title {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 2%);
+}
+
+#employee-form {
+    margin-top: 3.7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 550px;
+}
+
+.radios {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 7px;
+}
+
+.num::-webkit-inner-spin-button, .num::-webkit-outer-spin-button {
+    display: none;
+}
+
+#gender-select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+#date-form {
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+    box-sizing: content-box;
+}
+
+#date-form > input {
+    position: relative;
+    right: 20px;
+    width: 70%;
+}
+
+#department-form {
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+    box-sizing: content-box;
+}
+
+#department-form > select {
+    position: relative;
+    right: 20px;
+    width: 70%;
+}
+
+#address-form {
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+    box-sizing: content-box;
+}
+
+#address-form > input {
+    position: relative;
+    right: 20px;
+    width: 70%;
+}
+
+.gen {
+    font-size: 18px;
+}
+
+#name-form, #salary-form {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+#name-form > input, #salary-form > input {
+    width: calc(46%);
+}
+
+#salary-form {
+    width: fit-content;
+    position: absolute;
+    top: 120px;
+    margin-left: 47%;
+}
+
+#salary-form > input {
+    width: 610px;
+}
+
+.butt {
+    position: relative;
+    bottom: -4rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#err-messages {
+    color: red;
+    position: absolute;
+    left: 50%;
+    bottom: 31%;
+    transform: translate(-43%, 50%);
+    display: none;
+}
+
+#login-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-32%, 220%);
+
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+
+}
+
+
+#login-button:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}

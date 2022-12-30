@@ -1,0 +1,36 @@
+/* #all {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+} */
+
+.all {
+    width: 80%;
+}
+
+.card {
+    position: relative;
+    background-color: rgb(255, 165, 0);
+    width: 100%;
+    height: 16rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.data {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    width: 100%;
+}
+
+#image-container {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    background-color: black;
+    width: 130px;
+    height: 130px;
+}

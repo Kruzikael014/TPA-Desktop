@@ -13,7 +13,6 @@ function App ()
     const getEmployee = async () =>
     {
       const data = await getDocs( employeeRef );
-      console.log( data );
       setEmployee( data.docs.map( ( doc ) => ( { ...doc.data(), id: doc.id } ) ) );
     };
     getEmployee();
@@ -29,16 +28,16 @@ function App ()
 
   const updateEmployee = async ( id, age ) =>
   {
-    console.log( "Masuk" );
     const userDoc = doc( db, "Employeet", id );
     const newFields = { Age: Number( age + 1 ) };
     await updateDoc( userDoc, newFields );
   };
 
-  const deleteEmployee = async (id) => {
-    const userDoc = doc(db, "Employeet", id)
-    await deleteDoc(userDoc)
-  }
+  const deleteEmployee = async ( id ) =>
+  {
+    const userDoc = doc( db, "Employeet", id );
+    await deleteDoc( userDoc );
+  };
 
   return (
     <div className='App'>
@@ -59,14 +58,15 @@ function App ()
               <h1>Name : { data.Name }</h1>
               <h1>Age  : { data.Age }</h1>
               <div id="buttons">
-              <button onClick={ () =>
-              {
-                updateEmployee( data.id, Number( data.Age ) );
-              } }>Increase age</button>
-              <button onClick={() => {
-                deleteEmployee(data.id)
-              } }>Delete data</button>
-                </div>
+                <button onClick={ () =>
+                {
+                  updateEmployee( data.id, Number( data.Age ) );
+                } }>Increase age</button>
+                <button onClick={ () =>
+                {
+                  deleteEmployee( data.id );
+                } }>Delete data</button>
+              </div>
             </div>
           );
         } )

@@ -1,0 +1,74 @@
+#inventory-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#title-container {
+    margin-bottom: 4rem;
+}
+
+select { 
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 60%;
+    height: 3.2rem;
+}
+
+#fund-amount-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulir {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
+}
+
+#number-input {
+    display: flex;
+    column-gap: 2rem;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+#reason-form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 60%;
+    resize: none;
+    font-size: 14px;
+    height: 7rem;
+}
+
+#formulir > div {
+    row-gap: 2rem;
+    padding-left: 5rem;
+}
+
+#submit-button {
+    background-color: rgb(14, 85, 14);
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    color: white;
+
+    position: absolute;
+
+    top: 70%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+#submit-button:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}

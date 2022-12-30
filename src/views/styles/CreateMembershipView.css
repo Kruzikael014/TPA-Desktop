@@ -1,0 +1,59 @@
+#name-form-cmv-container, #email-form-cmv-container, #dob-form-cmv-container,  #membertype-form-cmv-container {
+    width: 100%;
+    display: flex;
+    column-gap: 8rem;
+}
+
+#form-cmv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.cmv-lb {
+    width: 18rem;
+}
+
+.cmv-inp, select {
+    width: 60rem;
+}
+
+#fgend-form-cmv, #mgend-form-cmv {
+    width: 2rem;
+}
+
+#butten, #female-butten, #male-butten {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#female-butten > label {
+    width: 8rem;
+}
+#male-butten > label {
+    width: 6rem;
+}
+
+#ohyeah-button {
+    width: 9.4rem;
+    height: 3.8rem;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+    text-align: center;
+    position:absolute;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+#ohyeah-button:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+

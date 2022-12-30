@@ -1,11 +1,13 @@
 * {
     margin: 0;
+    overflow: hidden;
 }
 
 body {
     
     background: url("../../components/back.png") repeat;
 }
+
 
 #navbar {
     display: flex;
@@ -20,12 +22,95 @@ body {
 }
 
 #form {
-    width: 45%;
-    height: 25rem;
+    width: 25%;
+    height: 32rem;
     background-color: white;
     border-radius: 30px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 3rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logout-container {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, #missed { 
+    width: 21rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 7px;
+}
+
+.input-container > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1rem;
+}
+
+#login-button-1 {
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#login-button-1:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+#logout-button {
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: rgb(232, 76, 55);
+    color: whitesmoke;
+    text-align: center;
+    position:absolute;
+    top: 2%;
+    left: 89vw;
+    user-select: none;
+    padding-top: 5px;
+}
+
+#logout-button:hover {
+    transition: 600ms;
+    background-color: rgb(241, 44, 44);
+}
+
+#err-message {
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    margin-top: 6.9rem;
+    font-size: 22px;
+    display: none;
+}
+
+#employees {
+    margin-top: 3rem;
+}
+
+label {
+    user-select: none;
 }
