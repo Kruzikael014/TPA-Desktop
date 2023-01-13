@@ -1,0 +1,36 @@
+
+#pleave-butt {
+    margin-top: 0.8rem;
+    position: relative;
+    left: calc(100vh * 0.6);
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#pleave-butt:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+#pleave-form-container {
+    margin-top: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.7rem;
+}
+
+.hori-div-pleave {
+    display: flex;
+}
+
+label {
+    width: 8rem;
+}
+

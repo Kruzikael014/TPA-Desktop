@@ -1,0 +1,40 @@
+#cfr-submit-batten {
+    margin-top: 0.8rem;
+    position: relative;
+    left: calc(100vh *0.6);
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#cfr-submit-batten:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+.cfr-form-lbs {
+    width: 8rem;
+}
+
+.hori-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.verti-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.cfr-form-inputs {
+    width: 55rem;
+}
+
+#cfr-form {
+    margin-top: 4rem;
+}

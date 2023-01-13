@@ -111,12 +111,10 @@
     display: none;
 }
 
-#login-button {
+#login-button-adEmp {
     position: absolute;
     left: 50%;
-    transform: translate(-32%, 220%);
-
-    margin-top: 0.8rem;
+    
     position: relative;
     width: 9.4rem;
     height: 3rem;
@@ -128,7 +126,7 @@
 }
 
 
-#login-button:hover {
+#login-button-adEmp:hover {
     transition: 600ms;
     background-color: rgb(23, 129, 23);
 }

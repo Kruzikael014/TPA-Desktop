@@ -1,0 +1,51 @@
+#title-addEq {
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-35%);
+}
+
+
+#add-butt-addEq {
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#add-butt-addEq:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+#eq-name-addEq, #ddown-category-addEq {
+    width: 60%;
+    margin-left: 4rem;
+}
+
+#eq-name-addEq {
+    margin-left: 7.2rem;
+}
+
+#addEq-form {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+#add-butt-addEq {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

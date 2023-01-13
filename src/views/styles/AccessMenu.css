@@ -1,0 +1,17 @@
+#acm-butt {
+    margin-top: 0.8rem;
+    position: relative;
+    top: 80px;
+    right: 500px;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#acm-butt:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}

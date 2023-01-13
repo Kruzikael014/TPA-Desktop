@@ -43,7 +43,10 @@ function Headers ()
                 <div id="center-logo">
                     <img src={ logo } alt="err" onClick={ ( e ) =>
                     {
-                        if(sessionStorage.getItem("department").length != 0) {
+                        if(sessionStorage.getItem("isAdmin") === true) {
+                            sessionStorage.setItem("department", "admin")
+                        }
+                        else if(sessionStorage.getItem("department").length != 0) {
                             history( "/home" );
                         }
                     } } />

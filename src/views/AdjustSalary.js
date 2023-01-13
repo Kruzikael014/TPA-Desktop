@@ -46,7 +46,7 @@ function AdjustSalary ()
                 requestamount: Number( newSalary ),
                 requeststatus: {
                     manager: "Waiting...",
-                    finance: "Waiting..."
+                    hrd: "Waiting..."
                 }
             };
             await addDoc( salaryReqRef, toBeInserted );

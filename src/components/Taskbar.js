@@ -10,13 +10,13 @@ const Taskbar = ( position ) =>
     {
         case "admin":
             return (
-                <div id="task-bar">
-                    <div id="task-card">
+                <div id="task-bar" >
+                    <div id="task-card" onClick={(e) => { history("/manage-menu") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Manage departments or employees access menu
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/reset-password") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Reset employees password
                         </h1>
@@ -41,17 +41,22 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
                     </div>
                     <div id="task-card">
+                        <h1 className="font-mono font-semibold text-1xl">
+                            Submit resignation letter
+                        </h1>
+                    </div>
+                    <div id="task-card" onClick={(e) => { history("/fund-request-approval") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Accept or reject issued fund requests
                         </h1>
@@ -74,13 +79,6 @@ const Taskbar = ( position ) =>
                     <div id="task-card">
                         <h1 className="font-mono font-semibold text-1xl">
                             View department's fund requests details
-                        </h1>
-                    </div>
-                    <div id="task-card" onClick={(e) => {
-                        history("/view-salary-adjustment")
-                    }}>
-                        <h1 className="font-mono font-semibold text-1xl">
-                            View employees' salary adjustment requests
                         </h1>
                     </div>
                     <div id="task-card">
@@ -118,17 +116,26 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/fund-request-approval") }}>
+                        <h1 className="font-mono font-semibold text-1xl">
+                            Accept or reject issued fund requests
+                        </h1>
+                    </div>
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
                     </div>
-
+                    <div id="task-card" onClick={(e) => { history("/approve-warning-letter") }}>
+                        <h1 className="font-mono font-semibold text-1xl">
+                            Accept or reject issued warning letters
+                        </h1>
+                    </div>
                     <div id="task-card">
                         <h1 className="font-mono font-semibold text-1xl">
                             Accept or reject resignation letter submitted by employees
@@ -198,12 +205,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
@@ -215,17 +222,12 @@ const Taskbar = ( position ) =>
                             Add new facilities and equipments
                         </h1>
                     </div>
-                    <div id="task-card">
-                        <h1 className="font-mono font-semibold text-1xl">
-                            Create facilities and equipments label
-                        </h1>
-                    </div>
                     <div id="task-card" onClick={ ( e ) =>
                     {
                         history("/view-broken-equipment-report")
                     } }>
                         <h1 className="font-mono font-semibold text-1xl">
-                            Fix or broken damaged facilities and equipments reports
+                            View Fix or broken damaged facilities and equipments reports
                         </h1>
                     </div>
                     <div id="task-card" onClick={ ( e ) =>
@@ -233,7 +235,7 @@ const Taskbar = ( position ) =>
                         history( "/view-equipment" );
                     } }>
                         <h1 className="font-mono font-semibold text-1xl">
-                            View facilities and equipment reports
+                            View facilities and equipment
                         </h1>
                     </div>
                     <div id="task-card" onClick={ ( e ) =>
@@ -264,12 +266,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
@@ -309,29 +311,21 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => {
+                        history("/add-external-parties")
+                    }}>
                         <h1 className="font-mono font-semibold text-1xl">
-                            Add advertising partners with its details
-                        </h1>
-                    </div>
-                    <div id="task-card">
-                        <h1 className="font-mono font-semibold text-1xl">
-                            Add food and beverage suppliers with its details
-                        </h1>
-                    </div>
-                    <div id="task-card">
-                        <h1 className="font-mono font-semibold text-1xl">
-                            Add movie producers with its details
+                            Add external parties with its details
                         </h1>
                     </div>
                     <div id="task-card">
@@ -339,7 +333,7 @@ const Taskbar = ( position ) =>
                             Add summarized or recorded information with external parties
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-movie-schedule") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Create movie schedules based on contract
                         </h1>
@@ -354,12 +348,30 @@ const Taskbar = ( position ) =>
                             Generate movie producers reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => {
+                        history("/view-movie-producer")
+                    }}>
                         <h1 className="font-mono font-semibold text-1xl">
-                            View movie producers data
+                            View Movie Producer data 
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => {
+                        history("/view-advertise-partner")
+                    }}>
+                        <h1 className="font-mono font-semibold text-1xl">
+                            View Advertising Partner data 
+                        </h1>
+                    </div>
+                    <div id="task-card" onClick={(e) => {
+                        history("/view-food-supplier")
+                    }}>
+                        <h1 className="font-mono font-semibold text-1xl">
+                            View Food or Beverage Supplier data 
+                        </h1>
+                    </div>
+                    <div id="task-card" onClick={(e) => {
+                        history("/view-food-stock")
+                    }}> 
                         <h1 className="font-mono font-semibold text-1xl">
                             View food and beverage data
                         </h1>
@@ -389,12 +401,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
@@ -449,12 +461,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
@@ -489,30 +501,37 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => history("/approve-leave-request")}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Accept or reject issued personal leave requests
                         </h1>
-                    </div>
+                    </div>  
 
                     <div id="task-card">
                         <h1 className="font-mono font-semibold text-1xl">
                             Accept or reject issued termination letters
                         </h1>
                     </div>
+                    <div id="task-card" onClick={(e) => {
+                        history("/view-salary-adjustment")
+                    }}>
+                        <h1 className="font-mono font-semibold text-1xl">
+                            View employees' salary adjustment requests
+                        </h1>
+                    </div>
                     <div id="task-card">
                         <h1 className="font-mono font-semibold text-1xl">
-                            Accept or reject issued warning letters
+                            View issued warning letters
                         </h1>
                     </div>
                     <div id="task-card" onClick={ ( e ) =>
@@ -533,7 +552,7 @@ const Taskbar = ( position ) =>
                             Issue a termination letter to employees
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/issue-warning-letter") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Issue a warning letter to employees
                         </h1>
@@ -576,12 +595,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
@@ -626,12 +645,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>
@@ -671,12 +690,12 @@ const Taskbar = ( position ) =>
                             Submit damaged facilities and equipments reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-fund-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit fund requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/create-leave-request") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Submit personal leave requests
                         </h1>

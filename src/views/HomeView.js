@@ -12,7 +12,7 @@ function HomeView ()
     const [ position, setPosition ] = useState( "" );
 
     const activeUser = sessionStorage.getItem( "active-user" );
-    const positionQ = query( collection( db, "Employee" ), where( "id", "==", activeUser ) );
+    const positionQ = query( collection( db, "Employee" ), where( "authid", "==", activeUser ) );
 
     onSnapshot( positionQ, ( snapshot ) =>
     {
@@ -23,9 +23,21 @@ function HomeView ()
             resultSet.push( { ...doc.data(), id: doc.id } );
         } );
         setPosition( resultSet[ 0 ].department );
+        // console.log(resultSet)
+        savePassword();
     } );
 
+    const savePassword = () => {
+        
+    }
+
     sessionStorage.setItem( "department", position );
+
+    if(sessionStorage.getItem("department") === "admin") {
+        sessionStorage.setItem( "isAdmin", true );
+    } else {
+        sessionStorage.setItem( "isAdmin", false );
+    }
 
     return (
         <div>

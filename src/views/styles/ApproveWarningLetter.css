@@ -1,0 +1,56 @@
+.awl-grn-btn {
+    background-color: rgb(14, 85, 14);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.awl-grn-btn:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+.awl-red-btn {
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(209, 24, 0);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.awl-red-btn:hover {
+    transition: 600ms;
+    background-color: rgb(255, 58, 58);
+} 
+
+.action-butt-awl {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.hori-div-awl {
+    display: flex;
+    padding: 2px;
+}
+
+.vertidiv-awl {
+    display: flex;
+    flex-direction: column;
+}
+
+.awl-detail-label {
+    width: 150px;
+}
+
+.distance-awl {
+    width: 90px;
+}
+
+#awl-datatable{
+    margin-top: 2rem;
+}

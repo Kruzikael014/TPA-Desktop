@@ -1,0 +1,41 @@
+#iwl-submit-btn {
+    margin-top: 0.8rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-90%);
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#iwl-submit-btn:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+
+
+.hori-div-iswl {
+    display: flex;
+    row-gap: 1rem;
+
+}
+
+#title-iwl {
+    position: relative;
+    left: calc(0.5 * 100vh);
+    margin-bottom: 3rem;
+}
+
+#verti-div-iswl {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+#verti-div-iswl > textarea {
+    width: calc(127.99px + 960px);
+}

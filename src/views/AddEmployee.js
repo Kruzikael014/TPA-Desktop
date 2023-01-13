@@ -33,28 +33,21 @@ const AddEmployee = () =>
         let errText = document.getElementById( "err-messages" );
         if ( name.length <= 0 ) // error
         {
-            // valid = false
-            // alert( "Name must not be empty!" );
         }
         else if ( salary < 1 )
         {
-            // alert( "Salary must be greater than 0" );
         }
         else if ( gender != "male" && gender != "female" )
         {
-            // alert( "Gender must not be empty" );
         }
         else if ( dob == 0 )
         {
-            // alert( "DOB must be filled" );
         }
         else if ( department.length == 0 )
         {
-            // alert("Must choose the department")
         }
         else if ( address.length == 0 )
         {
-            // alert("Must fill the address")
         }
         else
         {
@@ -63,11 +56,9 @@ const AddEmployee = () =>
 
         if ( valid )
         {
-            errText.style.display = "none";
             createAccount();
         } else
         {
-            errText.style.display = "block";
         }
 
     };
@@ -80,17 +71,24 @@ const AddEmployee = () =>
         await createUserWithEmailAndPassword( auth, email, password ).then( ( e ) =>
         {
             const idx = e.user.uid;
+            const obj = {
+                address: address,
+                department: department,
+                dob: new Date( dob ),
+                gender: gender,
+                authid: idx,
+                email: email,
+                password: password,
+                name: name,
+                salary: Number( salary ),
+            };
+            // console.log(obj)
             addDoc( employeeRef,
-                {
-                    address: address,
-                    department: department,
-                    dob: new Date( dob ),
-                    gender: gender,
-                    id: idx,
-                    name: name,
-                    salary: Number( salary ),
-                } );
-                window.location.reload()
+                obj );
+            setTimeout( () =>
+            {
+                window.location.reload();
+            }, 500 );
         } );
     };
 
@@ -125,9 +123,6 @@ const AddEmployee = () =>
                 <div>
                     <h1 id="title" className="font-mono font-bold text-6xl">
                         Add employee
-                    </h1>
-                    <h1 id="err-messages" className="font-mono font-semibold text-3xl">
-                        Form incomplete!
                     </h1>
                 </div>
                 <div id="employee-form">
@@ -164,21 +159,24 @@ const AddEmployee = () =>
                             <option value="manager">Manager</option>
                             <option value="finance">Finance</option>
                             <option value="storage">Storage</option>
-                            <option value="promotion and event department">Promotion and event department</option>
-                            <option value="external department">External department</option>
-                            <option value="human resource department">Human resource department</option>
-                            <option value="kitchen Division">Kitchen Division</option>
-                            <option value="front-office cafe">Front-office cafe</option>
-                            <option value="schedule division">Schedule division</option>
-                            <option value="operation division">Operation division</option>
-                            <option value="front-office movie">Front-office movie</option>
+                            <option value="promo">Promotion and event department</option>
+                            <option value="external">External department</option>
+                            <option value="hrd">Human resource department</option>
+                            <option value="cook">Kitchen Division</option>
+                            <option value="waiter">Front-office cafe</option>
+                            <option value="schedule">Schedule division</option>
+                            <option value="operation">Operation division</option>
+                            <option value="ticket">Front-office movie</option>
                         </select>
                     </div>
                     <div id="address-form" className="font-mono font-semibold text-3xl">
                         <label htmlFor="address">Address</label>
                         <input type="text" id="address" onChange={ ( e ) => { setAddress( e.target.value ); } } />
                     </div>
-                    <button type="submit" id="login-button" onClick={ registerEmployee } className="font-sans text-1xl font-bold font-mono" > Add employee</button>
+                    <button type="submit" id="login-button-adEmp" onClick={ ( e ) =>
+                    {
+                        registerEmployee();
+                    } } className="font-sans text-1xl font-bold font-mono" > Add employee</button>
                 </div>
             </div>
         </div>

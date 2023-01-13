@@ -1,0 +1,35 @@
+#show-butt-vc {
+    margin-bottom: 15px;
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#show-butt-vc:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+#filter-vc {
+    margin-top: 4rem;
+    width: 80%;
+    display: flex   ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

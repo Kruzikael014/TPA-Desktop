@@ -31,7 +31,7 @@ function SalaryRequestController ()
                         } );
                         setRequest( temp );
 
-                        console.log( temp );
+                        // console.log( temp )
                         if ( request.length === 0 )
                         {
                             // console.log(request)
@@ -100,7 +100,7 @@ function SalaryRequestController ()
         {
             getEmployeeSalaryByID( element.employeeid );
             if (element.finalized === "no") {
-                if ( element.requeststatus.finance === "Accepted" && element.requeststatus.manager === "Accepted")
+                if ( element.requeststatus.hrd === "Accepted" && element.requeststatus.manager === "Accepted")
             {
                 ( async function ()
                 {
@@ -115,7 +115,7 @@ function SalaryRequestController ()
                     const newFields = { salary: Number( element.requestamount ) };
                     await updateDoc( docRef, newFields );
                 } )();
-            } else if ( element.requeststatus.finance === "Rejected" && element.requeststatus.manager === "Rejected")
+            } else if ( element.requeststatus.hrd === "Rejected" && element.requeststatus.manager === "Rejected")
             {
                 ( async function ()
                 {
@@ -127,7 +127,7 @@ function SalaryRequestController ()
                     } )();
 
                 } )();
-            } else if ( element.requeststatus.finance === "Rejected" && element.requeststatus.manager === "Accepted")
+            } else if ( element.requeststatus.hrd === "Rejected" && element.requeststatus.manager === "Accepted")
             {
                 ( async function ()
                 {
@@ -140,7 +140,7 @@ function SalaryRequestController ()
                     } )();
 
                 } )();
-            } else if ( element.requeststatus.finance === "Accept" && element.requeststatus.manager === "Rejected")
+            } else if ( element.requeststatus.hrd === "Accept" && element.requeststatus.manager === "Rejected")
             {
                 ( async function ()
                 {

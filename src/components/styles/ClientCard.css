@@ -1,0 +1,27 @@
+
+#client-hori-compartment {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 96%;
+    height: 18rem;
+    background-color: orange;
+    border-radius: 2rem;
+    padding: 2rem;
+    justify-content: center;
+
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.verti {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.label {
+    width: 5.5rem;
+}

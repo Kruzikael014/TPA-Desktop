@@ -1,0 +1,48 @@
+
+#submit-butt-acli {
+    margin-top: 0.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#submit-butt-acli:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+.acli-lb {
+    width: 25rem;
+    display: inline-block;
+}
+
+#title-acli {
+    position: relative;
+    margin-left: 60vh;
+    margin-bottom: 5rem;
+}
+
+#form-acli {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+}
+
+#name-input-aclis, #email-input-aclis, #phoneNumber-input-aclis, #type-input-aclis {
+    width: 75rem;
+}
+
+#submit-butt-acli {
+    left: 50%;
+    transform: translate(-50%);
+}

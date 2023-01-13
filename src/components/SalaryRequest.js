@@ -15,17 +15,17 @@ function SalaryRequest ( prop )
         {
             const newFields = {
                 requeststatus: {
-                    finance: docu.requeststatus.finance,
+                    hrd: docu.requeststatus.hrd,
                     manager: "Accepted",
                 }
             };
             await updateDoc( docReference, newFields );
             window.location.reload();
-        } else if ( userPosition === "finance" )
+        } else if ( userPosition === "hrd" )
         {
             const newFields = {
                 requeststatus: {
-                    finance: "Accepted",
+                    hrd: "Accepted",
                     manager: docu.requeststatus.manager,
                 }
             };
@@ -41,17 +41,17 @@ function SalaryRequest ( prop )
         {
             const newFields = {
                 requeststatus: {
-                    finance: docu.requeststatus.finance,
+                    hrd: docu.requeststatus.hrd,
                     manager: "Rejected",
                 }
             };
             await updateDoc( docReference, newFields );
             window.location.reload();
-        } else if ( userPosition === "finance" )
+        } else if ( userPosition === "hrd" )
         {
             const newFields = {
                 requeststatus: {
-                    finance: "Rejected",
+                    hrd: "Rejected",
                     manager: docu.requeststatus.manager,
                 }
             };
@@ -102,10 +102,10 @@ function SalaryRequest ( prop )
                 </div>
                 <div class="fin-status-approval">
                     <h1>
-                        Finance
+                        hrd
                     </h1>
                     <h1>
-                        { prop.data.requeststatus.finance }
+                        { prop.data.requeststatus.hrd }
                     </h1>
                 </div>
             </div>
