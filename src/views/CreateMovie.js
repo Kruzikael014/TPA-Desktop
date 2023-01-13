@@ -1,4 +1,5 @@
 import { addDoc, collection, documentId, Firestore } from "firebase/firestore";
+import jQuery from "jquery";
 import { useState } from "react";
 import Headers from "../components/Header";
 import Taskbar from "../components/Taskbar";
@@ -17,7 +18,15 @@ const CreateMovie = () =>
         
         const generateSchedule = (id) => {
             
-            console.log(id)
+            const ref = collection(db, "MovieSchedule")
+
+            const startDate = new Date(Date.now()).toUTCString()
+
+            const nStartDate = startDate.substring(startDate.length - 2, startDate.length)
+
+            for(let i = Number(nStartDate); i <= 29;i++ ) {
+                window["schedule" + i] = (Math.random()*6)+1
+            }
 
         }
 
