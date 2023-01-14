@@ -1,0 +1,27 @@
+.sc-dmctIk.WQNxq {
+    border: 1px solid rgba(0, 0, 0, 0.124);
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+.select-seat-button-vmov {
+
+}
+
+.select-seat-button-vmov {
+    margin-top: 0.8rem;
+    position: relative;
+    width:3rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.select-seat-button-vmov:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}

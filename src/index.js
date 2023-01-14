@@ -32,6 +32,13 @@ import ApproveWarningLetter from './views/ApproveWarningLetter';
 import ResetPassword from './views/ResetPassword';
 import AccessMenu from './views/AccessMenu';
 import CreateMovie from './views/CreateMovie';
+import ViewMovieSchedule from './views/ViewMovieSchedule';
+import SeatDetail from './views/SeatDetail';
+import SeatPurchase from './views/SeatPurchase';
+import ViewRevenue from './views/ViewRevenue';
+import UpdateMovieSchedule from './views/UpdateMovieSchedule';
+import MovieUpdate from './views/MovieUpdate';
+import AddPromo from './views/AddPromo';
 
 const root = ReactDOM.createRoot( document.getElementById( 'root' ) );
 root.render(
@@ -66,6 +73,13 @@ root.render(
         <Route exact path='/reset-password' element={ <ResetPassword /> }></Route>
         <Route exact path='/manage-menu' element={ <AccessMenu /> }></Route>
         <Route exact path='/create-movie-schedule' element={ <CreateMovie /> }></Route>
+        <Route exact path='/view-movie-schedule' element={ <ViewMovieSchedule /> }></Route>
+        <Route exact path='/seat-detail' element={ <SeatDetail /> }></Route>
+        <Route exact path='/seat-purchase' element={ <SeatPurchase /> }></Route>
+        <Route exact path='/view-revenue' element={ <ViewRevenue /> }></Route>
+        <Route exact path='/update-movie-schedule' element={ <UpdateMovieSchedule /> }></Route>
+        <Route exact path='/movie-update' element={ <MovieUpdate /> }></Route>
+        <Route exact path='/add-promo' element={ <AddPromo /> }></Route>
       </Routes>
     </React.StrictMode>
   </Router>

@@ -91,7 +91,7 @@ const Taskbar = ( position ) =>
                             View membership reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/view-revenue") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             View revenue reports
                         </h1>
@@ -163,7 +163,7 @@ const Taskbar = ( position ) =>
                             View expense reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/view-revenue") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             View revenue reports
                         </h1>
@@ -276,16 +276,16 @@ const Taskbar = ( position ) =>
                             Submit personal leave requests
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/add-promo") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Add promos or events data
                         </h1>
                     </div>
-                    <div id="task-card">
+                    {/* <div id="task-card">
                         <h1 className="font-mono font-semibold text-1xl">
                             Create promos or events label
                         </h1>
-                    </div>
+                    </div> */}
                     <div id="task-card">
                         <h1 className="font-mono font-semibold text-1xl">
                             View promos or events data
@@ -660,12 +660,12 @@ const Taskbar = ( position ) =>
                             View movie schedule reports
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => {  history("/view-movie-schedule") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             View movie schedules with filters
                         </h1>
                     </div>
-                    <div id="task-card">
+                    <div id="task-card" onClick={(e) => { history("/update-movie-schedule") }}>
                         <h1 className="font-mono font-semibold text-1xl">
                             Update movie schedule
                         </h1>

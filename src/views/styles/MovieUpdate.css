@@ -1,0 +1,31 @@
+#movie-update-information {
+    position: relative;
+    top: 3rem;
+}
+
+#shift-form-movup{
+    position: relative;
+    top: 7rem;
+    display: flex;
+}
+
+#shift-form-input-lbs {
+    width: 10rem;
+}
+
+#movupd-button {
+    margin-top: 13.8rem;
+    margin-left: calc(100vh * 0.5);
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#movupd-button:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}

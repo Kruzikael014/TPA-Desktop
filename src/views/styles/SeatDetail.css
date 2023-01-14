@@ -1,0 +1,68 @@
+#middle-aligned-sdet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sdet-seat-container {
+    margin-top: 0.1rem;
+    width: 88%;
+    height: 650px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.seat-seatdet {
+    position: absolute;
+    background: none;
+    background-color: lightgreen;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+    appearance: none;
+}
+
+.seat-single-container {
+    background:none;
+    border: none;
+    width: auto;
+    height: 100%;
+}
+
+.seat-seatdet:checked {
+    background-color: lightblue;
+}
+
+.seat-seatdetlbs {
+    z-index: 999;
+    position: relative;
+    top: 64%;
+    left: 35%;
+}
+
+#seatdet-butt {
+    margin-left: calc(0.66 * 100vh);
+    margin-top: 1.8rem;
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#seatdet-butt:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+

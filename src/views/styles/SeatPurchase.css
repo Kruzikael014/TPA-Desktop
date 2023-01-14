@@ -1,0 +1,43 @@
+#spurch-butt {
+    margin-top: 4.8rem;
+    margin-left: calc(100vh * 0.62);
+    position: relative;
+    width: 9.4rem;
+    height: 3rem;
+    border: 0.2px rgba(0, 0, 0, 0.507) double;
+    border-radius: 10px;
+    background-color: rgb(14, 85, 14);
+    color: whitesmoke;
+}
+
+#spurch-butt:hover {
+    transition: 600ms;
+    background-color: rgb(23, 129, 23);
+}
+
+#spurch-member, #spurch-voucher {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.spurch-lbls {
+    width: 18rem;
+}
+
+#spurch-member-input, #spurch-voucher-input {
+    width: 55rem;
+}
+
+#fixed-spurch-attr {
+    user-select: none;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#spurch-mem-vouc-container {
+    position: relative;
+    margin-left: 5rem;
+}
